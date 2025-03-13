@@ -1,0 +1,18 @@
+{
+	// Utiliza la imagen universal de devcontainers
+	"image":"mcr.microsoft.com/devcontainers/universal:2",
+    
+    // Ejecuta luego de iniciar el espacio de trabajo
+	"postCreateCommand": "bundle install",
+	
+    // Configura propiedades de la herramienta
+	"customizations": {
+		// específico para VS Code.
+		"vscode": {
+			// extensiones a instalar
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
+}
